@@ -29,6 +29,12 @@ namespace Vehicles
         {
             EngineType.Start(); // This should delegate to the Engine class start()
         }
+
+        public void Drive()
+        {
+            //to be added
+        }
+        
     }
         
 }
