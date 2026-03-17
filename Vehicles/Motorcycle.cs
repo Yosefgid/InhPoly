@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Vehicles
 {
-    internal class Motorcycle
+    public class Motorcycle : Vehicle
     {
+        public bool HasSidecar { get; set }
+        public Motorcycle(string make, string model, int speed)
+            :base(make, model, speed)
+        {
+            HasSidecar = HasSidecar;
+        }
     }
 }
