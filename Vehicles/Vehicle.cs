@@ -13,7 +13,7 @@ namespace Vehicles
         public int Speed { get; set; }
 
         //Create Constructor
-        public Vehicle(string MAKE, string model, int speed)
+        public Vehicle(string make, string model, int speed)
         {
             Make = make;
             Model = model;
