@@ -32,7 +32,14 @@ namespace Vehicles
 
         public void Drive()
         {
-            //to be added
+            if (EngineType.Running)
+            {
+                Accelerate();
+            }
+            else
+            {
+                Console.WriteLine($"{Make} {Model} is not running");
+            }
         }
 
         protected abstract void Accelerate();
