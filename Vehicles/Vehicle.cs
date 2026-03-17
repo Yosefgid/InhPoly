@@ -12,12 +12,16 @@ namespace Vehicles
         public string Model { get; set; }
         public int Speed { get; set; }
 
+        //This is a composite property
+        public Engine EngineType{ get; set; }
+
         //Create Constructor
-        public Vehicle(string make, string model, int speed)
+        public Vehicle(string make, string model, int speed, Engine engine)
         {
             Make = make;
             Model = model;
             Speed = speed;
+            EngineType = engine; //Assign the Engine object here 
         }
     }
 }
