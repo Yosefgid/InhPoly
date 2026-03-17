@@ -23,5 +23,12 @@ namespace Vehicles
             //Speed = speed;
             EngineType = engine; //Assign the Engine object here 
         }
+
+        //Method to start the engine
+        public void StartEngine()
+        {
+            EngineType.Start(); // This should delegate to the Engine class start()
+        }
     }
+        
 }
