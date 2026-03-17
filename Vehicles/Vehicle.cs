@@ -34,6 +34,8 @@ namespace Vehicles
         {
             //to be added
         }
+
+        protected abstract void Accelerate();
         
     }
         
