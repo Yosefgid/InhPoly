@@ -8,11 +8,11 @@ namespace Vehicles
 {
     public class Motorcycle : Vehicle
     {
-        public bool HasSidecar { get; set }
-        public Motorcycle(string make, string model, int speed)
-            :base(make, model, speed)
+        public bool HasSidecar { get; set; }
+        public Motorcycle(string make, string model, bool hasSidecar)
+            :base(make, model, new MotorcycleEngine())
         {
-            HasSidecar = HasSidecar;
+            HasSidecar = hasSidecar;
         }
     }
 }
