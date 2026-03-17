@@ -18,5 +18,12 @@ namespace Vehicles
             FuelType = fuelType;
             Running = false;
         }
+
+        // New method
+        public void Start()
+        {
+            Running = true;
+
+        }
     }
 }
